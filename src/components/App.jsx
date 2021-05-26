@@ -6,9 +6,11 @@ import Contact from "./Contact/Contact";
 import "./app.scss";
 
 function App() {
+
+    const [menuOpen, setMenuOpen] = React.useState(false);
     return (
         <div className="app">
-            <TopBar />
+            <TopBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
             <div className="sections">
                 <Intro />
                 <Portfolio />
