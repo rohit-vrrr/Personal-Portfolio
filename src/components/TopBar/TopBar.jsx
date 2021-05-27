@@ -7,7 +7,7 @@ function TopBar({ menuOpen, setMenuOpen }) {
         <div className={"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro" className="logo">Rohit.</a>
+                    <a href="#intro" className="logo">ROHIT</a>
                     <div className="itemContainer">
                         <Person className="icon" />
                         <span>+91 9538-192017</span>
