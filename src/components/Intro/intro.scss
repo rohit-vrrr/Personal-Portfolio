@@ -56,6 +56,10 @@
                 font-size: 15px;
                 font-weight: 200;
                 padding-top: 15.625rem;
+
+                &:hover {
+                    color: crimson;
+                }
             }
         }
     }
