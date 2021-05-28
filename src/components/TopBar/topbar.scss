@@ -8,6 +8,7 @@
     position: fixed;
     z-index: 3;
     transition: all 1s ease;
+    overflow-y: hidden;
 
     .wrapper {
         padding: 10px 30px;
@@ -21,11 +22,13 @@
             transition: all 1s ease;
 
             .logo{
+                font-family: 'Charmonman', cursive;
                 font-size: 40px;
-                font-weight: 600;
+                font-weight: 700;
                 color: inherit;
                 text-decoration: none;
                 margin-right: 40px;
+                padding-right: 40px;
 
                 &:hover {
                     color: crimson;
