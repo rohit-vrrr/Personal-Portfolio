@@ -18,10 +18,22 @@ function Intro() {
 
     return (
         <div className="intro" id="intro">
-            <div className="left"></div>
+            <div className="left">
+                <div className="bgsquare2"></div>
+                <div className="bgsquare3"></div>
+                <div className="bgsquare4"></div>
+                <div className="wrapper">
+                    <span>Front-End Developer</span>
+                    <span>Back-End Developer</span>
+                    <span>and UX/UI Designer</span>
+                    <span>Based in India</span>
+                </div>
+            </div>
+            
             <a href="#aboutme">
                 <img src="assets/down-arrow.png" alt="down-arrow" />
             </a>
+
             <div className="right">
                 <div className="bgsquare1"></div>
                 <div className="wrapper">
