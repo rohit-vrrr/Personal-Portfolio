@@ -1,16 +1,36 @@
 import React from "react";
 import "./portfolio.scss";
 import PortfolioList from "../PortfolioList/PortfolioList";
+import { featuredPortfolio, webPortfolio, mobilePortfolio } from "../../data";
 
 function Portfolio() {
 
     const [selected, setSelected] = React.useState("featured");
+    const [data, setData] = React.useState([]);
 
     const list = [
         { id: "featured", title: "Featured" },
         { id:"web", title: "Web App"},
         { id:"mobile", title: "Mobile App"}
     ];
+
+    React.useEffect(() => {
+
+        switch(selected){
+            case "featured":
+                setData(featuredPortfolio);
+                break;
+            case "web":
+                setData(webPortfolio);
+                break;
+            case "mobile":
+                setData(mobilePortfolio);
+                break;
+            default:
+                setData(featuredPortfolio);
+        }
+
+    }, [selected]);
 
     return (
         <div className="portfolio" id="portfolio">
@@ -28,48 +48,17 @@ function Portfolio() {
             </ul>
 
             <div className="container">
-                <div className="item">
-                    <img
-                        src="https://moneyexcel.com/wp-content/uploads/2019/09/best-mobile-banking-app.jpg"
-                        alt="banking-app" 
-                    />
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item">
-                    <img
-                        src="https://moneyexcel.com/wp-content/uploads/2019/09/best-mobile-banking-app.jpg"
-                        alt="banking-app" 
-                    />
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item">
-                    <img
-                        src="https://moneyexcel.com/wp-content/uploads/2019/09/best-mobile-banking-app.jpg"
-                        alt="banking-app" 
-                    />
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item">
-                    <img
-                        src="https://moneyexcel.com/wp-content/uploads/2019/09/best-mobile-banking-app.jpg"
-                        alt="banking-app" 
-                    />
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item">
-                    <img
-                        src="https://moneyexcel.com/wp-content/uploads/2019/09/best-mobile-banking-app.jpg"
-                        alt="banking-app" 
-                    />
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item">
-                    <img
-                        src="https://moneyexcel.com/wp-content/uploads/2019/09/best-mobile-banking-app.jpg"
-                        alt="banking-app" 
-                    />
-                    <h3>Banking App</h3>
-                </div>
+
+                {data.map((eachData)=> (
+                    <div className="item">
+                        <img
+                            src={eachData.img}
+                            alt="img"
+                        />
+                        <h3>{eachData.title}</h3>
+                    </div>
+                ))}
+                
             </div>
         </div>
     );
