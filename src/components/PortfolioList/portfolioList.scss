@@ -1,0 +1,18 @@
+li {
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 50px;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &.active {
+        background-color: gray;
+        color: black;
+        font-weight: 800;
+    }
+
+    &:hover {
+        color: crimson;
+    }
+}
