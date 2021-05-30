@@ -34,7 +34,8 @@ function Portfolio() {
 
     return (
         <div className="portfolio" id="portfolio">
-            <h1>Portfolio</h1>
+            <h1>PROJECTS</h1>
+            <h2>_____</h2>
 
             <ul>
                 {list.map((item) => (
