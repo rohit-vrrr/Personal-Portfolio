@@ -34,30 +34,6 @@
                     color: crimson;
                 }
             }
-
-            .itemContainer{
-                display: flex;
-                align-items: center;
-                margin-right: 30px;
-
-                .icon{
-                    font-size: 18px;
-                    margin-right: 5px;
-
-                    &:hover {
-                        color: crimson;
-                    }
-                }
-
-                span{
-                    font-size: 15px;
-                    font-weight: 500;
-
-                    &:hover {
-                        color: crimson;
-                    }
-                }
-            }
         }
 
         .right{

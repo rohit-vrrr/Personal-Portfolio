@@ -23,15 +23,18 @@
     ul {
         margin: 0;
         padding: 0;
-        width: 60%;
+        width: 70%;
         list-style: none;
-        font-size: 30px;
-        font-weight: 400;
+        font-size: 25px;
+        font-weight: 500;
         color: black;
         background-color: inherit;
 
         li {
+            font-size: inherit;
+            font-weight: inherit;
             margin-bottom: 25px;
+            color: inherit;
             background-color: inherit;
 
             a {
@@ -43,6 +46,7 @@
 
             &:hover {
                 font-weight: 600;
+                color: crimson;
             }
         }
     }
