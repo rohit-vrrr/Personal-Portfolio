@@ -1,12 +1,17 @@
 import React from "react";
 import "./aboutme.scss";
-import { headerAboutMe, bodyAboutMe, footerAboutMe, questionAboutMe } from "../../aboutMeData";
+import {
+    headerAboutMe,
+    bodyAboutMe,
+    footerAboutMe,
+    questionAboutMe,
+    featuresAboutMe } from "../../aboutMeData";
 
 function AboutMe() {
     return (
         <div className="aboutme" id="aboutme">
-            <div className="container">
-                <div className="item">
+            <div className="mainContainer">
+                <div className="mainItem">
                     <div className="left">
                         <div className="leftContainer">
                             <div className="imgContainer">
@@ -19,7 +24,20 @@ function AboutMe() {
                         </div>
                     </div>
                     <div className="right">
-                        <span></span>
+                        <div className="rightContainer">
+                            {
+                                featuresAboutMe.map((eachFeature) => (
+                                    <div className="item">
+                                        <img
+                                            src={eachFeature.img}
+                                            alt="feature-img"
+                                        />
+                                        <h3>{eachFeature.title}</h3>
+                                        <p>{eachFeature.description}</p>
+                                    </div>
+                                ))
+                            }
+                        </div>
                     </div>
                 </div>
             </div>

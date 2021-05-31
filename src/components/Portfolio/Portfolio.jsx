@@ -49,16 +49,17 @@ function Portfolio() {
             </ul>
 
             <div className="container">
-
-                {data.map((eachData)=> (
-                    <div className="item">
-                        <img
-                            src={eachData.img}
-                            alt="img"
-                        />
-                        <h3>{eachData.title}</h3>
-                    </div>
-                ))}
+                {
+                    data.map((eachData)=> (
+                        <div className="item">
+                            <img
+                                src={eachData.img}
+                                alt="img"
+                            />
+                            <h3>{eachData.title}</h3>
+                        </div>
+                    ))
+                }
                 
             </div>
         </div>
