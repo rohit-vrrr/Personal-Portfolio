@@ -1,7 +1,10 @@
 import React from "react";
 import "./portfolio.scss";
 import PortfolioList from "../PortfolioList/PortfolioList";
-import { featuredPortfolio, webPortfolio, mobilePortfolio } from "../../data";
+import { featuredPortfolio,
+    reactPortfolio,
+    javascriptPortfolio,
+    mobilePortfolio } from "../../data";
 
 function Portfolio() {
 
@@ -9,9 +12,10 @@ function Portfolio() {
     const [data, setData] = React.useState([]);
 
     const list = [
-        { id: "featured", title: "Featured" },
-        { id:"web", title: "Web App"},
-        { id:"mobile", title: "Mobile App"}
+        { id: "featured", title: "FEATURED" },
+        { id:"react", title: "REACT-JS"},
+        { id:"javascript", title: "JAVASCRIPT"},
+        { id:"mobile", title: "MOBILE APP" }
     ];
 
     React.useEffect(() => {
@@ -20,8 +24,11 @@ function Portfolio() {
             case "featured":
                 setData(featuredPortfolio);
                 break;
-            case "web":
-                setData(webPortfolio);
+            case "react":
+                setData(reactPortfolio);
+                break;
+            case "javascript":
+                setData(javascriptPortfolio);
                 break;
             case "mobile":
                 setData(mobilePortfolio);
