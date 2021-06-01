@@ -42,7 +42,7 @@ function Portfolio() {
     return (
         <div className="portfolio" id="portfolio">
             <h1>PROJECTS</h1>
-            <h2>_____</h2>
+            <h2>_________</h2>
 
             <ul>
                 {list.map((item) => (
