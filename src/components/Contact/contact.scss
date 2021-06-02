@@ -94,5 +94,37 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-color: #050505;
+
+        .bottomContainer {
+            width: 50%;
+            height: 50%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: #050505;
+
+            a {
+                background-color: inherit;
+                button {
+                    margin: 0 1em;
+                    padding: 1em;
+                    background-color: #0c0c0c;
+                    border: solid 1px white;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .spanName {
+            margin: 1em;
+            font-size: 12px;
+            font-weight: 300;
+            color: white;
+            .spanYear {
+                color: crimson;
+            }
+        }
     }
 }
