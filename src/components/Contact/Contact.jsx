@@ -6,6 +6,7 @@ function Contact() {
 
     const [message, setMessage] = React.useState(false);
     const year = new Date().getFullYear();
+    const btnStyle = { color:"white", fontSize:"1.5em", backgroundColor:"#0c0c0c" };
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -32,19 +33,19 @@ function Contact() {
                     <a
                     href="https://www.linkedin.com/in/rohit-v-170b76162/">
                         <button className="socialButton">
-                            <FaLinkedinIn color="white" size="1.5em" />
+                            <FaLinkedinIn style={btnStyle} />
                         </button>
                     </a>
                     <a
                     href="https://www.instagram.com/r0hit4real/">
                         <button className="socialButton">
-                            <FaInstagram color="white" size="1.5em" />
+                            <FaInstagram style={btnStyle} />
                         </button>
                     </a>
                     <a
                     href="https://github.com/rohit-vrrr">
                         <button className="socialButton">
-                            <FaGithub color="white" size="1.5em" />
+                            <FaGithub style={btnStyle} />
                         </button>
                     </a>
                 </div>

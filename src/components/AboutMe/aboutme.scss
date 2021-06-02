@@ -68,11 +68,14 @@
                         text-align: justify;
                     }
 
-                    span {
-                        font-size: 15px;
-                        font-weight: 400;
-                        color: crimson;
-                        cursor: pointer;
+                    a{
+                        text-decoration: none;
+                        span {
+                            font-size: 15px;
+                            font-weight: 400;
+                            color: crimson;
+                            cursor: pointer;
+                        }
                     }
                 }
             }

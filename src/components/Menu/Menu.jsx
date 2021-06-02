@@ -11,16 +11,16 @@ function Menu({ menuOpen, setMenuOpen }) {
         <div className={"menu " + (menuOpen && "active")}>
             <ul>
                 <li onClick={closeMenu}>
-                    <a href="#intro">Home</a>
+                    <a href="#intro">HOME</a>
                 </li>
                 <li onClick={closeMenu}>
-                    <a href="#aboutme">About Me</a>
+                    <a href="#aboutme">ABOUT ME</a>
                 </li>
                 <li onClick={closeMenu}>
-                    <a href="#portfolio">Portfolio</a>
+                    <a href="#portfolio">PROJECTS</a>
                 </li>
                 <li onClick={closeMenu}>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact">CONTACT</a>
                 </li>
             </ul>
         </div>

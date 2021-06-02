@@ -111,8 +111,13 @@
                     margin: 0 1em;
                     padding: 1em;
                     background-color: #0c0c0c;
-                    border: solid 1px white;
+                    border: solid 1px rgb(100, 100, 100);
                     cursor: pointer;
+                    transition: all 0.5s ease;
+
+                    &:hover {
+                        transform: scale(0.95);
+                    }
                 }
             }
         }

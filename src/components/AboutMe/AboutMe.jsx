@@ -20,7 +20,9 @@ function AboutMe() {
                             <h2>{questionAboutMe}</h2>
                             <h3>{headerAboutMe}</h3>
                             <p>{bodyAboutMe}</p>
-                            <span>{footerAboutMe}</span>
+                            <a href="#contact">
+                                <span>{footerAboutMe}</span>
+                            </a>
                         </div>
                     </div>
                     <div className="right">
