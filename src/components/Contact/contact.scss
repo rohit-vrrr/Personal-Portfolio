@@ -8,8 +8,18 @@
     align-items: center;
 
     h1 {
-        font-size: 40px;
+        font-size: 2.5rem;
         font-weight: 600;
+
+        @include mobile{
+            font-size: 1.25rem;
+        }
+    }
+
+    h2 {
+        @include mobile{
+            font-size: 0.813rem;
+        }
     }
 
     .top {
@@ -29,34 +39,46 @@
             align-items: center;
 
             input {
-                width: 500px;
-                height: 30px;
+                width: 31.25rem;
+                height: 1.875rem;
                 padding: 5px 10px;
                 color: $mainColor;
                 background-color: #0c0c0c;
                 border: none;
-                font-size: 15px;
+                font-size: 0.938rem;
                 font-weight: 500;
                 margin-bottom: 5px;
+
+                @include mobile{
+                    width: 12.5rem;
+                    height: 1.25rem;
+                    font-size: 0.625rem;
+                }
             }
 
             textarea {
-                width: 500px;
-                height: 100px;
+                width: 31.25rem;
+                height: 6.25rem;
                 padding: 5px 10px;
                 color: $mainColor;
                 background-color: #0c0c0c;
                 border: none;
-                font-size: 15px;
+                font-size: 0.938rem;
                 font-weight: 500;
                 margin-bottom: 5px;
+
+                @include mobile{
+                    width: 12.5rem;
+                    height: 6.25rem;
+                    font-size: 0.625rem;
+                }
             }
 
             button {
-                width: 130px;
-                height: 50px;
+                width: 8.125rem;
+                height: 3.125rem;
                 color: $mainColor;
-                font-size: 18px;
+                font-size: 1.125rem;
                 font-weight: 400;
                 border: solid 2px white;
                 cursor: pointer;
@@ -66,18 +88,31 @@
                     border: none;
                     background-color: crimson;
                 }
+
+                @include mobile{
+                    width: 6.25em;
+                    height: 2.5em;
+                    font-size: 0.938rem;
+                    border: solid 1px white;
+                }
             }
 
             span {
-                width: 500px;
-                line-height: 30px;
+                width: 31.25rem;
+                line-height: 1.875rem;
                 padding: 0 10px;
-                font-size: 15px;
+                font-size: 0.938rem;
                 font-weight: 500;
                 text-align: center;
                 color: black;
                 background-color: #5CD85A;
                 margin-bottom: 5px;
+
+                @include mobile{
+                    width: 12.5rem;
+                    line-height: 1.25rem;
+                    font-size: 0.5rem;
+                }
             }
 
             *:focus {
@@ -118,17 +153,27 @@
                     &:hover {
                         transform: scale(0.95);
                     }
+
+                    @include mobile{
+                        padding: 0.5rem;
+                    }
                 }
             }
         }
 
         .spanName {
             margin: 1em;
-            font-size: 12px;
+            font-size: 0.75rem;
             font-weight: 300;
             color: white;
+            background-color: #0c0c0c;
             .spanYear {
                 color: crimson;
+                background-color: #0c0c0c;
+            }
+
+            @include mobile{
+                font-size: 0.5rem;
             }
         }
     }

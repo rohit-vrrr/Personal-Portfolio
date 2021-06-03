@@ -179,6 +179,7 @@
                             font-weight: 400;
                             color: $mainColor;
                             text-align: center;
+                            overflow-y: hidden;
 
                             @include mobile{
                                 font-size: 0.625rem;
