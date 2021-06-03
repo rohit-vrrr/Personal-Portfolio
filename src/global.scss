@@ -1,5 +1,5 @@
 $mainColor: white;
-$width: 600px;
+$width: 800px;
 
 @mixin mobile {
     @media (max-width: #{$width}) {
