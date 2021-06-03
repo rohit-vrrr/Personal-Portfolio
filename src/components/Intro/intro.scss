@@ -1,50 +1,58 @@
+@import "../../global.scss";
+
 .intro {
+    background-color: black;
     display: flex;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
 
     .left {
         flex: 0.5;
-        position: relative;
+        overflow: hidden;
 
         .bgsquare2 {
-            border-radius: 20px;
-            border: solid 15px lightblue;
-            padding: 5px;
-            width: 10px;
-            height: 10px;
+            border-radius: 1.25em;
+            border: solid 0.938em lightblue;
+            padding: 0.313em;
+            width: 0.625em;
+            height: 0.625em;
             position: absolute;
-            margin-left: 550px;
-            margin-top: 450px;
+            margin-left: 34.375em;
+            margin-top: 28.125em;
             z-index: 1;
         }
 
         .bgsquare3 {
-            border-radius: 18px;
-            border: solid 15px #89CFF0;
-            padding: 4px;
-            width: 8px;
-            height: 8px;
+            border-radius: 1.125em;
+            border: solid 0.938em #89CFF0;
+            padding: 0.25em;
+            width: 0.5em;
+            height: 0.5em;
             position: absolute;
-            margin-left: 400px;
-            margin-top: 100px;
+            margin-left: 25em;
+            margin-top: 6.25em;
             z-index: 1;
         }
         
         .bgsquare4 {
-            border-radius: 20px;
-            border: solid 15px #6495ED;
-            padding: 5px;
-            width: 15px;
-            height: 15px;
+            border-radius: 1.25em;
+            border: solid 0.938em #6495ED;
+            padding: 0.313em;
+            width: 0.938em;
+            height: 0.938em;
             position: absolute;
-            margin-left: 150px;
-            margin-top: 280px;
+            margin-left: 9.375em;
+            margin-top: 17.5em;
             z-index: 1;
         }
 
         .wrapper {
             width: 100%;
             height: 100%;
-            padding-right: 15.625rem;
+            padding-right: 15.625em;
             display: flex;
             position: absolute;
             flex-direction: column;
@@ -52,26 +60,34 @@
             transform: rotate(-180deg);
 
             span {
-                color: white;
-                font-size: 15px;
+                color: $mainColor;
+                font-size: 0.938rem;
                 font-weight: 200;
-                padding-top: 15.625rem;
+                padding-top: 15.625em;
 
                 &:hover {
                     color: crimson;
                 }
             }
+
+            @include mobile{
+                display: none;
+            }
+        }
+
+        @include mobile{
+            display: none;
         }
     }
 
     a {
         position: absolute;
-        bottom: 10px;
+        bottom: 0.625em;
         left: 49%;
         z-index: 3;
 
         img {
-            width: 40px;
+            width: 2.5rem;
             animation: arrowBlink 2s infinite ease;
         }
 
@@ -86,39 +102,52 @@
         flex: 0.5;
         position: relative;
 
+        @include mobile{
+            flex: 1;
+        }
+
         .bgsquare1 {
-            border-radius: 20px;
-            border: solid 15px #6495ED;
-            padding: 5px;
-            width: 15px;
-            height: 15px;
+            border-radius: 1.25em;
+            border: solid 0.938em #6495ED;
+            padding: 0.313em;
+            width: 0.938em;
+            height: 0.938em;
             position: absolute;
-            margin-left: 300px;
-            margin-top: 25px;
+            margin-left: 18.75em;
+            margin-top: 1.563em;
             z-index: 1;
+
+            @include mobile{
+                margin-top: 4.688em;
+                margin-left: 12.5em;
+            }
         }
 
         .wrapper {
             width: 100%;
             height: 100%;
-            padding-left: 80px;
+            padding-left: 5em;
             display: flex;
             flex-direction: column;
             justify-content: center;
 
             h2 {
-                color: white;
-                font-size: 100px;
+                color: $mainColor;
+                font-size: 6.25rem;
                 font-weight: 800;
-                margin: 2px 0;
+                margin: 0.125em 0;
+
+                @include mobile{
+                    font-size: 3.125rem;
+                }
             }
 
             h3 {
-                color: white;
-                font-size: 30px;
+                color: $mainColor;
+                font-size: 1.875rem;
 
                 span {
-                    font-size: inherit;
+                    font-size: 1.875rem;
                     color: crimson;
                 }
 
@@ -134,6 +163,18 @@
                         opacity: 0;
                     }
                 }
+
+                @include mobile{
+                    font-size: 0.938rem;
+                    span {
+                        font-size: 0.938rem;
+                    }
+                }
+            }
+
+            @include mobile{
+                padding-left: 0;
+                width: 18.75em;
             }
         }
     }

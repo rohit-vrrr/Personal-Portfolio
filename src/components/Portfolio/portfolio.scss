@@ -8,12 +8,12 @@
     align-items: center;
 
     h1 {
-        font-size: 40px;
+        font-size: 2.5rem;
         font-weight: 600;
     }
 
     ul {
-        margin-top: 50px;
+        margin-top: 3.125em;
         padding: 0;
         list-style: none;
         display: flex;
@@ -21,18 +21,18 @@
 
     .container {
         width: 70%;
-        margin-top: 15px;
+        margin-top: 0.938em;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
 
         .item {
-            width: 220px;
-            height: 150px;
-            border: 1px solid gray;
-            border-radius: 20px;
-            margin: 10px 20px;
+            width: 13.75em;
+            height: 9.375em;
+            border: 0.063em solid gray;
+            border-radius: 1.25em;
+            margin: 0.625em 1.25em;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -43,7 +43,7 @@
 
             h3 {
                 position: absolute;
-                font-size: 20px;
+                font-size: 1.25rem;
             }
 
             img {
