@@ -64,6 +64,7 @@ function Portfolio() {
                                 alt="img"
                             />
                             <h3>{eachData.title}</h3>
+                            <button>LEARN MORE</button>
                         </div>
                     ))
                 }

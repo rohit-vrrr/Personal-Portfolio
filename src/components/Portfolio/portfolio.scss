@@ -58,7 +58,6 @@
             justify-content: center;
             color: inherit;
             position: relative;
-            cursor: pointer;
             transition: all 0.5s ease;
 
             @include mobile{
@@ -68,7 +67,15 @@
 
             h3 {
                 position: absolute;
+                top: 0;
                 font-size: 1.25rem;
+                font-weight: 600;
+                margin: 20px auto;
+                transition: all 0.3s ease;
+
+                @include mobile{
+                    font-size: 0.75rem;
+                }
             }
 
             img {
@@ -76,6 +83,33 @@
                 height: 100%;
                 object-fit: cover;
                 z-index: 1;
+                transition: all 0.3s ease;
+            }
+
+            button {
+                position: absolute;
+                cursor: pointer;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                border: 2px solid crimson;
+                font-size: 0.938rem;
+                font-weight: 500;
+                margin: 20px auto;
+                padding: 5px 0;
+                width: 130px;
+                color: $mainColor;
+                background-color: rgba(255, 255, 255, 0);
+                transition: all 0.5s ease;
+
+                &:hover{
+                    background-color: crimson;
+                }
+
+                @include mobile{
+                    font-size: 0.625rem;
+                    width: 90px;
+                }
             }
 
             &:hover {
@@ -86,7 +120,7 @@
                     color: $mainColor;
                 }
                 img {
-                    opacity: 0.2;
+                    opacity: 0.1;
                     z-index: 0;
                 }
             }
