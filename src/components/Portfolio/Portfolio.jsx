@@ -39,6 +39,10 @@ function Portfolio() {
 
     }, [selected]);
 
+    function handleOnClick(eachData) {
+        alert(eachData.title);
+    }
+
     return (
         <div className="portfolio" id="portfolio">
             <h1>PROJECTS</h1>
@@ -64,7 +68,7 @@ function Portfolio() {
                                 alt="img"
                             />
                             <h3>{eachData.title}</h3>
-                            <button>LEARN MORE</button>
+                            <button onClick={(() => handleOnClick(eachData))}>LEARN MORE</button>
                         </div>
                     ))
                 }
