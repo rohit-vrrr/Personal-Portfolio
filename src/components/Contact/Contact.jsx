@@ -1,17 +1,37 @@
 import React from "react";
 import "./contact.scss";
 import { FaLinkedinIn, FaInstagram, FaGithub } from 'react-icons/fa';
+import {db} from "../../firebase"; 
 
 function Contact() {
 
-    const [message, setMessage] = React.useState(false);
+    // firebase values
+    const [name, setName] = React.useState("");
+    const [email, setEmail] = React.useState("");
+    const [message, setMessage] = React.useState("");
+
+    const [submit, setSubmit] = React.useState(false);
     const year = new Date().getFullYear();
     const btnStyle = { color:"white", fontSize:"1.5em", backgroundColor:"#0c0c0c" };
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        setMessage(true);
+        db.collection("contacts")
+            .add({
+                name: name,
+                email: email,
+                message: message
+            })
+            .then(() => {
+                setName("");
+                setEmail("");
+                setMessage("");
+                setSubmit(true);
+            })
+            .catch((err) => {
+                alert(err.message);
+            });
     }
 
     return (
@@ -21,10 +41,30 @@ function Contact() {
             
             <div className="top">
                 <form onSubmit={handleSubmit}>
-                    <input type="text" placeholder="Name" autoComplete="new-password" />
-                    <input type="text" placeholder="Enter email" autoComplete="new-password" />
-                    <textarea placeholder="Your Message" autoComplete="new-password" />
-                    {message && <span>Your message was sent successfully. Thanks!</span>}
+                    <input
+                        type="text"
+                        placeholder="Name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        autoComplete="new-password"
+                        required
+                    />
+                    <input
+                        type="text"
+                        placeholder="Enter email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        autoComplete="new-password"
+                        required
+                    />
+                    <textarea
+                        placeholder="Your Message"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        autoComplete="new-password"
+                        required
+                    />
+                    {submit && <span>Your message was sent successfully. Thanks!</span>}
                     <button type="submit">SUBMIT</button>
                 </form>
             </div>
