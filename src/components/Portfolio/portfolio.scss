@@ -6,10 +6,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 0.5s ease;
 
     h1 {
         font-size: 2.5rem;
         font-weight: 600;
+        transition: inherit;
 
         @include mobile{
             font-size: 1.25rem;
@@ -17,6 +19,8 @@
     }
 
     h2 {
+        transition: inherit;
+
         @include mobile{
             font-size: 0.813rem;
         }
@@ -27,6 +31,7 @@
         padding: 0;
         list-style: none;
         display: flex;
+        transition: inherit;
 
         @include mobile{
             margin: 0.625em 0;
@@ -42,6 +47,7 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        transition: inherit;
 
         @include mobile{
             width: 100%;
@@ -58,7 +64,7 @@
             justify-content: center;
             color: inherit;
             position: relative;
-            transition: all 0.5s ease;
+            transition: inherit;
 
             @include mobile{
                 width: 8.125em;
@@ -124,6 +130,12 @@
                     z-index: 0;
                 }
             }
+        }
+    }
+
+    &.active {
+        ul, .container {
+            opacity: 0.2;
         }
     }
 }

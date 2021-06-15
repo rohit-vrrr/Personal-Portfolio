@@ -1,6 +1,7 @@
 import React from "react";
 import "./portfolio.scss";
 import PortfolioList from "../PortfolioList/PortfolioList";
+import PortfolioItem from "../PortfolioItem/PortfolioItem";
 import { featuredPortfolio,
     reactPortfolio,
     javascriptPortfolio,
@@ -10,6 +11,7 @@ function Portfolio() {
 
     const [selected, setSelected] = React.useState("featured");
     const [data, setData] = React.useState([]);
+    const [itemOpen, setItemOpen] = React.useState(false);
 
     const list = [
         { id: "featured", title: "FEATURED" },
@@ -39,12 +41,12 @@ function Portfolio() {
 
     }, [selected]);
 
-    function handleOnClick(eachData) {
-        alert(eachData.title);
+    function handleClick() {
+        setItemOpen(!itemOpen);
     }
 
     return (
-        <div className="portfolio" id="portfolio">
+        <div className={"portfolio " + (itemOpen && "active")} id="portfolio">
             <h1>PROJECTS</h1>
             <h2>_________</h2>
 
@@ -68,12 +70,17 @@ function Portfolio() {
                                 alt="img"
                             />
                             <h3>{eachData.title}</h3>
-                            <button onClick={(() => handleOnClick(eachData))}>LEARN MORE</button>
+                            <button onClick={handleClick}>LEARN MORE</button>
                         </div>
                     ))
                 }
                 
             </div>
+
+            {itemOpen && (
+                <PortfolioItem itemOpen={itemOpen} setItemOpen={setItemOpen}/>
+            )}
+            
         </div>
     );
 }

@@ -1,0 +1,28 @@
+@import "../../global.scss";
+
+.portfolioItem {
+    width: 50%;
+    height: 90%;
+    position: absolute;
+    background-color: $mainColor;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        color: black;
+        background-color: $mainColor;
+        opacity: 1;
+    }
+
+    button {
+        color: $mainColor;
+    }
+
+    &.active {
+        z-index: 3;
+        opacity: 1;
+    }
+}
