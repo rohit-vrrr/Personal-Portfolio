@@ -41,10 +41,6 @@ function Portfolio() {
 
     }, [selected]);
 
-    function handleClick() {
-        setItemOpen(!itemOpen);
-    }
-
     return (
         <div className={"portfolio " + (itemOpen && "active")} id="portfolio">
             <h1>PROJECTS</h1>
@@ -70,7 +66,7 @@ function Portfolio() {
                                 alt="img"
                             />
                             <h3>{eachData.title}</h3>
-                            <button onClick={handleClick}>LEARN MORE</button>
+                            <button onClick={()=>setItemOpen(!itemOpen)}>LEARN MORE</button>
                         </div>
                     ))
                 }
