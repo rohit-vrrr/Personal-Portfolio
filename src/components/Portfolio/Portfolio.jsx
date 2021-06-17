@@ -13,6 +13,9 @@ function Portfolio() {
     const [data, setData] = React.useState([]);
     const [itemOpen, setItemOpen] = React.useState(false);
 
+    // onClick LEARN MORE event
+    var [clickedProject, setclickedProject] = React.useState("");
+
     const list = [
         { id: "featured", title: "FEATURED" },
         { id:"react", title: "REACT-JS"},
@@ -41,6 +44,12 @@ function Portfolio() {
 
     }, [selected]);
 
+    function handleClick(e) {
+        setItemOpen(!itemOpen);
+        clickedProject = e.target.previousElementSibling.innerText;
+        setclickedProject(clickedProject);
+    }
+
     return (
         <div className={"portfolio " + (itemOpen && "active")} id="portfolio">
             <h1>PROJECTS</h1>
@@ -66,7 +75,7 @@ function Portfolio() {
                                 alt="img"
                             />
                             <h3>{eachData.title}</h3>
-                            <button onClick={()=>setItemOpen(!itemOpen)}>LEARN MORE</button>
+                            <button onClick={handleClick}>LEARN MORE</button>
                         </div>
                     ))
                 }
@@ -74,7 +83,11 @@ function Portfolio() {
             </div>
 
             {itemOpen && (
-                <PortfolioItem itemOpen={itemOpen} setItemOpen={setItemOpen}/>
+                <PortfolioItem
+                    itemOpen={itemOpen}
+                    setItemOpen={setItemOpen}
+                    clickedProject={clickedProject}
+                />
             )}
             
         </div>

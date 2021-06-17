@@ -1,7 +1,7 @@
 import React from "react";
 import "./portfolioItem.scss";
 
-function PortfolioItem({ itemOpen, setItemOpen }) {
+function PortfolioItem({ itemOpen, setItemOpen, clickedProject }) {
 
     function closeItem() {
         setItemOpen(false);
@@ -9,7 +9,7 @@ function PortfolioItem({ itemOpen, setItemOpen }) {
 
     return (
         <div className={"portfolioItem " + (itemOpen && "active")}>
-            <h1>Portfolio Item</h1>
+            <h1>{clickedProject}</h1>
             <button onClick={closeItem}>Close</button>
         </div>
     );
