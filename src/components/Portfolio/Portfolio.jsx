@@ -25,7 +25,7 @@ function Portfolio() {
 
     React.useEffect(() => {
 
-        switch(selected){
+        switch(selected) {
             case "featured":
                 setData(featuredPortfolio);
                 break;
@@ -84,6 +84,7 @@ function Portfolio() {
 
             {itemOpen && (
                 <PortfolioItem
+                    selected={selected}
                     itemOpen={itemOpen}
                     setItemOpen={setItemOpen}
                     clickedProject={clickedProject}

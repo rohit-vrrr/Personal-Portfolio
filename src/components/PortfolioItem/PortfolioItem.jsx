@@ -1,7 +1,50 @@
 import React from "react";
 import "./portfolioItem.scss";
+import { featuredPortfolio,
+    reactPortfolio,
+    javascriptPortfolio,
+    mobilePortfolio } from "../../data";
 
-function PortfolioItem({ itemOpen, setItemOpen, clickedProject }) {
+function PortfolioItem({ selected, itemOpen, setItemOpen, clickedProject }) {
+
+    var selectedProject = [];
+
+    switch(selected) {
+        case("featured"):
+            featuredPortfolio.forEach((item) => {
+                if(item.title === clickedProject) {
+                    selectedProject.push(item);
+                }
+                return selectedProject;
+            });
+            break;
+        case("react"):
+            reactPortfolio.forEach((item) => {
+                if(item.title === clickedProject) {
+                    selectedProject.push(item);
+                }
+                return selectedProject;
+            });
+            break;
+        case("javascript"):
+            javascriptPortfolio.forEach((item) => {
+                if(item.title === clickedProject) {
+                    selectedProject.push(item);
+                }
+                return selectedProject;
+            });
+            break;
+        case("mobile"):
+            mobilePortfolio.forEach((item) => {
+                if(item.title === clickedProject) {
+                    selectedProject.push(item);
+                }
+                return selectedProject;
+            });
+            break;
+        default:
+            //Do Nothing
+    }
 
     function closeItem() {
         setItemOpen(false);
@@ -9,7 +52,11 @@ function PortfolioItem({ itemOpen, setItemOpen, clickedProject }) {
 
     return (
         <div className={"portfolioItem " + (itemOpen && "active")}>
-            <h1>{clickedProject}</h1>
+            <img
+                src={selectedProject[0].img}
+                alt="img"
+            />
+            <h2>{selectedProject[0].title}</h2>
             <button onClick={closeItem}>Close</button>
         </div>
     );
