@@ -4,7 +4,7 @@
     width: 50%;
     height: 98%;
     position: absolute;
-    background-color: $mainColor;
+    background: $mainColor;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -14,12 +14,13 @@
         top: 0;
         width: 100%;
         height: 70%;
+        border-bottom: 2px solid #000;
     }
 
     h2 {
         position: relative;
         color: black;
-        background-color: $mainColor;
+        background: $mainColor;
         margin-top: 15px;
         margin-bottom: 10px;
         margin-left: 30px;
@@ -29,12 +30,29 @@
         position: relative;
         width: 90%;
         margin: 0 auto;
-        background-color: $mainColor;
-        border-top: 1px solid #000;
+        background: $mainColor;
+        border-top: 1px solid #c0c0c0;
     }
 
-    button {
-        color: $mainColor;
+    .button {
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: $mainColor;
+        cursor: pointer;
+
+        .close {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: $mainColor;
+            color: crimson;
+
+            &:hover {
+                color: rgb(187, 12, 47);
+            }
+        }
     }
 
     &.active {

@@ -4,6 +4,7 @@ import { featuredPortfolio,
     reactPortfolio,
     javascriptPortfolio,
     mobilePortfolio } from "../../data";
+import CloseIcon from '@material-ui/icons/Close';
 
 function PortfolioItem({ selected, itemOpen, setItemOpen, clickedProject }) {
 
@@ -58,7 +59,9 @@ function PortfolioItem({ selected, itemOpen, setItemOpen, clickedProject }) {
             />
             <h2>{selectedProject[0].title}</h2>
             <hr className="hrline"></hr>
-            <button onClick={closeItem}>Close</button>
+            <a className="button" onClick={closeItem}>
+                <CloseIcon className="close" fontSize="large"/>
+            </a>
         </div>
     );
 }
