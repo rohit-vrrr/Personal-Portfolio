@@ -19,11 +19,13 @@
 
     h2 {
         position: relative;
+        width: 90%;
+        margin: 0 auto;
         color: black;
         background: $mainColor;
+        font-weight: 700;
         margin-top: 15px;
         margin-bottom: 10px;
-        margin-left: 30px;
     }
 
     hr {
@@ -32,6 +34,16 @@
         margin: 0 auto;
         background: $mainColor;
         border-top: 1px solid #c0c0c0;
+    }
+
+    span {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        color: black;
+        background: $mainColor;
+        font-weight: 400;
+        margin-top: 10px;
     }
 
     .button {

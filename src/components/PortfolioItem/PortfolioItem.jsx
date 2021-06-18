@@ -59,6 +59,7 @@ function PortfolioItem({ selected, itemOpen, setItemOpen, clickedProject }) {
             />
             <h2>{selectedProject[0].title}</h2>
             <hr className="hrline"></hr>
+            <span>{selectedProject[0].desc}</span>
             <a href="#portfolio" className="button" onClick={closeItem}>
                 <CloseIcon className="close" fontSize="large"/>
             </a>
