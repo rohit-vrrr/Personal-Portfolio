@@ -3,7 +3,7 @@
 .menu {
     width: 300px;
     height: 100vh;
-    background-color: $mainColor;
+    background: $mainColor;
     position: fixed;
     top: 0;
     right: -300px;
@@ -28,19 +28,19 @@
         font-size: 25px;
         font-weight: 500;
         color: black;
-        background-color: inherit;
+        background: inherit;
 
         li {
             font-size: inherit;
             font-weight: inherit;
             margin-bottom: 25px;
             color: inherit;
-            background-color: inherit;
+            background: inherit;
 
             a {
                 font-size: inherit;
                 color: inherit;
-                background-color: inherit;
+                background: inherit;
                 text-decoration: none;
             }
 
