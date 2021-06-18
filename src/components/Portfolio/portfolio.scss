@@ -56,7 +56,7 @@
         .item {
             width: 13.75em;
             height: 9.375em;
-            border: 0.063em solid gray;
+            border: 0.063em solid #c0c0c0;
             border-radius: 1.25em;
             margin: 0.625em 1.25em;
             display: flex;
@@ -105,11 +105,11 @@
                 padding: 5px 0;
                 width: 130px;
                 color: $mainColor;
-                background-color: rgba(255, 255, 255, 0);
+                background: rgba(255, 255, 255, 0);
                 transition: all 0.5s ease;
 
                 &:hover{
-                    background-color: crimson;
+                    background: crimson;
                 }
 
                 @include mobile{
@@ -119,10 +119,10 @@
             }
 
             &:hover {
-                background-color: black;
+                background: black;
                 transform: translateY(-5px);
                 h3 {
-                    background-color: rgba(255, 255, 255, 0);
+                    background: rgba(255, 255, 255, 0);
                     color: $mainColor;
                 }
                 img {
