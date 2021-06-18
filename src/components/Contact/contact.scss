@@ -145,13 +145,18 @@
                 button {
                     margin: 0 1em;
                     padding: 1em;
-                    background-color: #0c0c0c;
+                    background: #0c0c0c;
                     border: solid 1px rgb(100, 100, 100);
                     cursor: pointer;
                     transition: all 0.5s ease;
 
+                    .logo {
+                        background: #0c0c0c;
+                    }
+
                     &:hover {
                         transform: scale(0.95);
+                        filter: invert(5%);
                     }
 
                     @include mobile{
@@ -166,10 +171,10 @@
             font-size: 0.75rem;
             font-weight: 300;
             color: white;
-            background-color: #0c0c0c;
+            background: #0c0c0c;
             .spanYear {
                 color: crimson;
-                background-color: #0c0c0c;
+                background: #0c0c0c;
             }
 
             @include mobile{

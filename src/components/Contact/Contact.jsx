@@ -73,19 +73,19 @@ function Contact() {
                     <a
                     href="https://www.linkedin.com/in/rohit-v-170b76162/">
                         <button className="socialButton">
-                            <FaLinkedinIn style={btnStyle} />
+                            <FaLinkedinIn className="logo" style={btnStyle} />
                         </button>
                     </a>
                     <a
                     href="https://www.instagram.com/r0hit4real/">
                         <button className="socialButton">
-                            <FaInstagram style={btnStyle} />
+                            <FaInstagram className="logo" style={btnStyle} />
                         </button>
                     </a>
                     <a
                     href="https://github.com/rohit-vrrr">
                         <button className="socialButton">
-                            <FaGithub style={btnStyle} />
+                            <FaGithub className="logo" style={btnStyle} />
                         </button>
                     </a>
                 </div>
