@@ -2,7 +2,7 @@
 
 .portfolioItem {
     width: 50%;
-    height: 90%;
+    height: 98%;
     position: absolute;
     background-color: $mainColor;
     z-index: 1;
@@ -21,7 +21,16 @@
         color: black;
         background-color: $mainColor;
         margin-top: 15px;
+        margin-bottom: 10px;
         margin-left: 30px;
+    }
+
+    hr {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        background-color: $mainColor;
+        border-top: 1px solid #000;
     }
 
     button {

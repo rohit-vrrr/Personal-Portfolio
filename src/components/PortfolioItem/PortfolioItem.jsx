@@ -57,6 +57,7 @@ function PortfolioItem({ selected, itemOpen, setItemOpen, clickedProject }) {
                 alt="img"
             />
             <h2>{selectedProject[0].title}</h2>
+            <hr className="hrline"></hr>
             <button onClick={closeItem}>Close</button>
         </div>
     );
