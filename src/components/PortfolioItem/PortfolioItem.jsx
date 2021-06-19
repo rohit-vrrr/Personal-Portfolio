@@ -5,6 +5,7 @@ import { featuredPortfolio,
     javascriptPortfolio,
     mobilePortfolio } from "../../data";
 import CloseIcon from '@material-ui/icons/Close';
+import LaunchIcon from '@material-ui/icons/Launch';
 
 function PortfolioItem({ selected, itemOpen, setItemOpen, clickedProject }) {
 
@@ -53,16 +54,27 @@ function PortfolioItem({ selected, itemOpen, setItemOpen, clickedProject }) {
 
     return (
         <div className={"portfolioItem " + (itemOpen && "active")}>
+
             <img
                 src={selectedProject[0].img}
                 alt="img"
             />
+            
             <h2>{selectedProject[0].title}</h2>
             <hr className="hrline"></hr>
             <span>{selectedProject[0].desc}</span>
-            <a href="#portfolio" className="button" onClick={closeItem}>
-                <CloseIcon className="close" fontSize="large"/>
-            </a>
+
+            <div className="buttonContainer">
+                <a href={selectedProject[0].link} className="launchButton">
+                    <LaunchIcon className="launch" fontSize="small"/>
+                    <span>VIEW SITE</span>
+                </a>
+                
+                <a href="#portfolio" className="closeButton" onClick={closeItem}>
+                    <CloseIcon className="close" fontSize="large"/>
+                </a>
+            </div>
+
         </div>
     );
 }

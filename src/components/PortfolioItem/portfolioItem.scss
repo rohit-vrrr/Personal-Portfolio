@@ -46,23 +46,76 @@
         margin-top: 10px;
     }
 
-    .button {
+    .buttonContainer {
         position: relative;
-        display: block;
-        width: 40px;
-        height: 40px;
         background: $mainColor;
-        cursor: pointer;
+        width: 90%;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
 
-        .close {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: $mainColor;
-            color: crimson;
+        .launchButton {
+            position: relative;
+            display: inline-block;
+            width: 120px;
+            height: 25px;
+            padding: 5px 10px;
+            background: crimson;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: all 0.5s ease;
+    
+            .launch {
+                color: $mainColor;
+                background: crimson;
+                vertical-align: middle;
+                padding-right: 5px;
+                transition: inherit;
+            }
+    
+            span {
+                font-size: 13px;
+                font-weight: 600;
+                color: $mainColor;
+                background: crimson;
+                transition: inherit;
+            }
 
             &:hover {
-                color: rgb(187, 12, 47);
+                background: $mainColor;
+                .launch {
+                    color: crimson;
+                    background: $mainColor;
+                }
+                span {
+                    color: crimson;
+                    background: $mainColor;
+                }
+            }
+        }
+    
+        .closeButton {
+            position: absolute;
+            display: inline-block;
+            width: 40px;
+            height: 30px;
+            background: $mainColor;
+            cursor: pointer;
+            right: 0;
+            top: 5px;
+    
+            .close {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: $mainColor;
+                color: #c0c0c0;
+    
+                &:hover {
+                    color: #9b9b9b;
+                }
             }
         }
     }
