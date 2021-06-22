@@ -51,7 +51,7 @@ function Portfolio() {
     }
 
     return (
-        <div className={"portfolio " + (itemOpen && "active")} id="portfolio">
+        <div className={"portfolio " + (itemOpen && "active")} id="projects">
             <h1>PROJECTS</h1>
             <h2>_________</h2>
 

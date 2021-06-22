@@ -70,7 +70,7 @@ function PortfolioItem({ selected, itemOpen, setItemOpen, clickedProject }) {
                     <span>VIEW SITE</span>
                 </a>
                 
-                <a href="#portfolio" className="closeButton" onClick={closeItem}>
+                <a href="#projects" className="closeButton" onClick={closeItem}>
                     <CloseIcon className="close" fontSize="large"/>
                 </a>
             </div>

@@ -1,22 +1,36 @@
 export const featuredPortfolio = [
     {
         id: 1,
-        title: "Featured App 1",
-        img: "https://www.mindinventory.com/blog/wp-content/uploads/2018/10/banking-app-1.png",
+        title: "String",
+        img: "assets/js-stringchat.png",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         link: "https://www.google.co.in/"
     },
     {
         id: 2,
-        title: "Featured App 2",
-        img: "https://cdn57.androidauthority.net/wp-content/uploads/2018/06/monzo-bank.jpg",
+        title: "Keeper App",
+        img: "assets/react-keeperapp.png",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         link: "https://www.google.co.in/"
     },
     {
         id: 3,
-        title: "Featured App 3",
-        img: "https://moneyexcel.com/wp-content/uploads/2019/09/best-mobile-banking-app.jpg",
+        title: "Anonymous.io",
+        img: "assets/js-anonymousio.png",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        link: "https://www.google.co.in/"
+    },
+    {
+        id: 4,
+        title: "ToDo List",
+        img: "assets/react-todolist.png",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        link: "https://www.google.co.in/"
+    },
+    {
+        id: 5,
+        title: "Blog Website",
+        img: "assets/js-blog.png",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         link: "https://www.google.co.in/"
     }
@@ -25,36 +39,15 @@ export const featuredPortfolio = [
 export const reactPortfolio = [
     {
         id: 1,
-        title: "React App 1",
-        img: "https://www.techuz.com/blog/wp-content/uploads/2018/10/Web-application-vs-website.jpg",
+        title: "Keeper App",
+        img: "assets/react-keeperapp.png",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         link: "https://www.google.co.in/"
     },
     {
         id: 2,
-        title: "React App 2",
-        img: "https://www.moveoapps.com/blog/wp-content/uploads/2020/07/types-of-web-applications.png",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        link: "https://www.google.co.in/"
-    },
-    {
-        id: 3,
-        title: "React App 3",
-        img: "https://sc04.alicdn.com/kf/U18a4a096b0564d01b2caef2f382f36ad1.jpg",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        link: "https://www.google.co.in/"
-    },
-    {
-        id: 4,
-        title: "React App 4",
-        img: "https://www.finoit.com/wp-content/uploads/2020/02/web-application-development.png",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        link: "https://www.google.co.in/"
-    },
-    {
-        id: 5,
-        title: "React App 5",
-        img: "https://www.finoit.com/wp-content/uploads/2020/02/web-application-development.png",
+        title: "ToDo List",
+        img: "assets/react-todolist.png",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         link: "https://www.google.co.in/"
     }
@@ -63,33 +56,61 @@ export const reactPortfolio = [
 export const javascriptPortfolio = [
     {
         id: 1,
-        title: "Javascript App 1",
-        img: "https://primomate.com/wp-content/uploads/2020/11/app1.jpg",
+        title: "String",
+        img: "assets/js-stringchat.png",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         link: "https://www.google.co.in/"
     },
     {
         id: 2,
-        title: "Javascript App 2",
-        img: "https://miro.medium.com/max/1000/1*ZnVbmWK9nAothEg_de2fOA.jpeg",
+        title: "Anonymous.io",
+        img: "assets/js-anonymousio.png",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         link: "https://www.google.co.in/"
-    }
+    },
+    {
+        id: 3,
+        title: "Blog Website",
+        img: "assets/js-blog.png",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        link: "https://www.google.co.in/"
+    },
+    {
+        id: 4,
+        title: "Newsletter",
+        img: "assets/js-newsletter.png",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        link: "https://www.google.co.in/"
+    },
+    {
+        id: 5,
+        title: "JWT Authentication",
+        img: "assets/js-jwtauth.jpg",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        link: "https://www.google.co.in/"
+    },
+    {
+        id: 6,
+        title: "UpBeat",
+        img: "assets/js-upbeat.png",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        link: "https://www.google.co.in/"
+    },
 ];
 
 export const mobilePortfolio = [
     {
         id: 1,
-        title: "Mobile App 1",
-        img: "https://cdn57.androidauthority.net/wp-content/uploads/2018/06/monzo-bank.jpg",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        link: "https://www.google.co.in/"
+        title: "TapZTap",
+        img: "assets/mobile-tapztap.png",
+        desc: "A simple game made using Unity engine. Try and control the ball by a single *Tap* and traverse the Zigzag path. It's a never ending, infinite journey.",
+        link: "https://play.google.com/store/apps/details?id=com.rokgames.tapztap"
     },
     {
         id: 2,
-        title: "Mobile App 2",
-        img: "https://miro.medium.com/max/1000/1*ZnVbmWK9nAothEg_de2fOA.jpeg",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        link: "https://www.google.co.in/"
+        title: "Mad Bird",
+        img: "assets/mobile-madbird.png",
+        desc: "A clone of the iconic Flappy, recreated on Unity. You will be playing as the Bird and making your way through the Desert, by avoiding various obstacles.",
+        link: "https://play.google.com/store/apps/details?id=com.rokgames.madbird"
     }
 ];

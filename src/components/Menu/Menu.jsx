@@ -17,7 +17,7 @@ function Menu({ menuOpen, setMenuOpen }) {
                     <a href="#aboutme">ABOUT ME</a>
                 </li>
                 <li onClick={closeMenu}>
-                    <a href="#portfolio">PROJECTS</a>
+                    <a href="#projects">PROJECTS</a>
                 </li>
                 <li onClick={closeMenu}>
                     <a href="#contact">CONTACT</a>
