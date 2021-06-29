@@ -12,7 +12,7 @@ function Intro() {
             typeSpeed: 80,
             backDelay: 1500,
             backSpeed: 60,
-            strings: ["Front-End Developer", "Back-End Developer", "UX/UI Designer"]
+            strings: ["Full-Stack Web Developer", "Front-End Developer", "Back-End Developer", "UX/UI Designer"]
         })
     }, []);
 

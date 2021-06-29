@@ -1,8 +1,8 @@
 export const questionAboutMe = "Who's this guy?";
 
-export const headerAboutMe = "I'm Rohit, a Full-Stack Web Developer and UX/UI Javascript designer.";
+export const headerAboutMe = "I'm a Full-Stack Web Developer and UX/UI Javascript designer.";
 
-export const bodyAboutMe = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+export const bodyAboutMe = "A new grad who has a serious passion for developing some amazing web applications with a fully responsive, intuitive and dynamic user experience.";
 
 export const footerAboutMe = "Let's make something special.";
 
